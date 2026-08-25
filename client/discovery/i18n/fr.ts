@@ -2012,6 +2012,8 @@ export const fr: DeepPartial<EnCatalog> = {
     },
 };
 
+Object.assign(fr, { notifications: { ...fr.notifications, repeat: { expand: 'Afficher {count} mises à jour', expand_plural: 'Afficher {count} mises à jour', collapse: 'Masquer les mises à jour répétées', legacyHint: 'Affichage de la plus récente parmi {count} alertes similaires.' } } });
+
 
 Object.assign(fr, { maintenance: {
     ...fr.maintenance,
