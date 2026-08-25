@@ -122,6 +122,10 @@ Object.assign(ja, { homeDashboard: { ...ja.homeDashboard, nowPlayingCompanion: {
     telemetry: { state: '状態', progress: '進行状況', mediaType: 'メディア種別', episode: 'エピソード', playing: '再生中' },
 } } });
 
+Object.assign(ja, { homeDashboard: { ...ja.homeDashboard, nowPlayingCompanion: { ...ja.homeDashboard.nowPlayingCompanion,
+    sections: { ...ja.homeDashboard.nowPlayingCompanion.sections, storySnapshot: 'ストーリーの概要' }, overview: { show: '番組について', movie: '映画について', season: 'シーズン {season} の概要', episode: 'エピソード S{season}E{episode}', episodeWithName: 'エピソード S{season}E{episode}: {name}', readMore: '続きを読む', readLess: '表示を減らす', unavailable: 'この作品のあらすじはまだありません。' }, crew: { popularity: '人気度 {value}', otherRoles: 'この作品での他の役割: {roles}', productionSnapshot: '制作概要', moreCrew: 'スタッフをさらに表示', networks: 'ネットワーク' }, header: { ...ja.homeDashboard.nowPlayingCompanion.header, playbackProgress: '{mediaType}・{progress}% 視聴済み' }, summary: { progress: '進行状況 {progress}%', throughSession: 'このセッションで {progress}% 視聴済み' },
+} } });
+
 Object.assign(ja, { settings: { ...ja.settings, homeLayout: {
     sectionShown: 'ホームページに表示中のセクション', sectionHidden: 'ホームページで非表示のセクション', shown: '表示', hidden: '非表示', livePreview: 'ライブプレビュー', leftColumn: '左列', heroFixed: 'ヒーローバナーは上部に固定され、設定できません。',
     title: 'ホームページのレイアウト', description: 'セクションをドラッグして、全員のホームページの順序を変更します。セクション全体を表示または非表示にできます。メインダッシュボードのグリッドは、カードの高さを整えるため左右の固定レイアウトを維持します。', resetDefault: 'デフォルトに戻す', pageSections: 'ページセクション', reorderHint: 'ハンドルをドラッグして並べ替えます。表示/非表示で各セクションを切り替えます。すべてのセクションは初期状態で表示されています。', saveHintBefore: 'このページの下部にある', saveAction: '「設定を保存」', saveHintAfter: 'をクリックすると、レイアウトの変更が全員に適用されます。', tipLabel: 'ヒント:', tipBody: 'ライブポータルエディターでは、ホームページから直接個別のウィジェットを移動、非表示、再追加することもできます。このページは管理者向けのセクションレイアウトエディターです。', watchHistory: '視聴履歴の設定', recentlyWatchedRows: '最近視聴した行数', mostWatchedRows: '最も視聴された行数', rowsPerPage: 'ページごとに表示する行数。', row: '行', rows: '行',

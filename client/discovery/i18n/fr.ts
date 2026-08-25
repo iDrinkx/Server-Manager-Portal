@@ -2156,6 +2156,13 @@ Object.assign(fr, { homeDashboard: { ...fr.homeDashboard, nowPlayingCompanion: {
     telemetry: { state: 'État', progress: 'Progression', mediaType: 'Type de média', episode: 'Épisode', playing: 'En lecture' },
 } } });
 
+Object.assign(fr, { homeDashboard: { ...fr.homeDashboard, nowPlayingCompanion: { ...fr.homeDashboard.nowPlayingCompanion,
+    sections: { ...fr.homeDashboard.nowPlayingCompanion.sections, storySnapshot: 'Résumé de l’histoire' },
+    overview: { show: 'À propos de la série', movie: 'À propos du film', season: 'Aperçu de la saison {season}', episode: 'Épisode S{season}E{episode}', episodeWithName: 'Épisode S{season}E{episode} : {name}', readMore: 'Lire la suite', readLess: 'Afficher moins', unavailable: 'Aucun résumé n’est encore disponible pour ce titre.' },
+    crew: { popularity: 'Popularité {value}', otherRoles: 'Également sur ce titre : {roles}', productionSnapshot: 'Aperçu de la production', moreCrew: 'Plus de membres de l’équipe', networks: 'Réseaux' },
+    header: { ...fr.homeDashboard.nowPlayingCompanion.header, playbackProgress: '{mediaType} · {progress} % visionné' }, summary: { progress: 'progression {progress} %', throughSession: '{progress} % de cette session' },
+} } });
+
 Object.assign(fr, { settings: { ...fr.settings, homeLayout: {
     sectionShown: 'Section affichée sur l’accueil', sectionHidden: 'Section masquée sur l’accueil', shown: 'Affichée', hidden: 'Masquée', livePreview: 'Aperçu en direct', leftColumn: 'Colonne de gauche', heroFixed: 'La bannière principale reste en haut et ne peut pas être configurée.',
     title: 'Disposition de la page d’accueil', description: 'Faites glisser les sections pour réorganiser l’accueil pour tout le monde. Affichez ou masquez des sections entières. La grille principale conserve sa disposition fixe gauche/droite afin de garder des cartes équilibrées.', resetDefault: 'Rétablir la disposition par défaut', pageSections: 'Sections de la page', reorderHint: 'Faites glisser la poignée pour réorganiser. Utilisez Affichée/Masquée pour chaque section ; elles sont toutes visibles par défaut.', saveHintBefore: 'Cliquez sur ', saveAction: 'Enregistrer les paramètres', saveHintAfter: ' au bas de cette page pour appliquer les changements de disposition à tous.', tipLabel: 'Conseil :', tipBody: 'L’éditeur du portail peut aussi déplacer, masquer et réajouter des widgets directement depuis l’accueil. Cette page reste l’éditeur de disposition des sections pour tous les administrateurs.', watchHistory: 'Configuration de l’historique de visionnage', recentlyWatchedRows: 'Lignes récemment regardées', mostWatchedRows: 'Lignes les plus regardées', rowsPerPage: 'Nombre de lignes à afficher par page.', row: 'ligne', rows: 'lignes',

@@ -2819,6 +2819,14 @@ Object.assign(en, { homeDashboard: { ...en.homeDashboard, nowPlayingCompanion: {
     telemetry: { state: 'State', progress: 'Progress', mediaType: 'Media type', episode: 'Episode', playing: 'Playing' },
 } } });
 
+Object.assign(en, { homeDashboard: { ...en.homeDashboard, nowPlayingCompanion: { ...en.homeDashboard.nowPlayingCompanion,
+    sections: { ...en.homeDashboard.nowPlayingCompanion.sections, storySnapshot: 'Story snapshot' },
+    overview: { show: 'About the show', movie: 'About the movie', season: 'Season {season} overview', episode: 'Episode S{season}E{episode}', episodeWithName: 'Episode S{season}E{episode}: {name}', readMore: 'Read more', readLess: 'Show less', unavailable: 'No synopsis is available for this title yet.' },
+    crew: { popularity: 'Popularity {value}', otherRoles: 'Also on this title: {roles}', productionSnapshot: 'Production snapshot', moreCrew: 'More crew', networks: 'Networks' },
+    header: { ...en.homeDashboard.nowPlayingCompanion.header, playbackProgress: '{mediaType} · {progress}% watched' },
+    summary: { progress: 'progress {progress}%', throughSession: '{progress}% through this session' },
+} } });
+
 Object.assign(en, { settings: { ...en.settings, arrIntegrations: {
     actions: { addInstance: 'Add Instance', defaultInstance: 'Default instance', setAsDefault: 'Set as default', removeInstance: 'Remove instance', testConnection: 'Test Connection' },
     status: { default: 'Default' },
