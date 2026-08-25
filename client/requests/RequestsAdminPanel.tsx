@@ -487,9 +487,7 @@ export const RequestsAdminPanel: React.FC<Props> = ({ onCountsChange, embedded =
                         <p>{error}</p>
                         {counts.configured && (
                             <p className="text-xs text-red-200/80">
-                                If you use a public reverse-proxy URL, the portal container may not reach it. Add an
-                                {' '}<strong>{t('requestsAdmin.labels.internalFetchUrl')}</strong> under Settings → Integrations
-                                (docker service name or LAN IP, e.g. <code className="text-red-100">http://jellyseerr:5055</code>).
+                                {t('requestsAdmin.page.internalFetchHint')}
                             </p>
                         )}
                     </div>
@@ -499,7 +497,7 @@ export const RequestsAdminPanel: React.FC<Props> = ({ onCountsChange, embedded =
                     <div className="py-12 text-center text-muted">
                         <p className="font-medium text-text mb-2">{t('requestsAdmin.page.notConfigured')}</p>
                         <p className="text-sm max-w-md mx-auto">
-                            Set Request App Type, URL, and API key under Settings → Integrations. Ombi is not supported for in-portal approval yet.
+                            {t('requestsAdmin.page.notConfiguredHint')}
                         </p>
                     </div>
                 )}
@@ -508,7 +506,7 @@ export const RequestsAdminPanel: React.FC<Props> = ({ onCountsChange, embedded =
                     <div className="py-12 text-center text-muted">
                         <p className="font-medium text-text mb-2">{t('requestsAdmin.page.notSupported')}</p>
                         <p className="text-sm max-w-md mx-auto">
-                            In-portal approval works with Seerr, Overseerr, and Jellyseerr. Ombi requires the external request UI.
+                            {t('requestsAdmin.page.notSupportedHint')}
                         </p>
                     </div>
                 )}

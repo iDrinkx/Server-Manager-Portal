@@ -2254,6 +2254,7 @@ export const en = {
             connectHint: 'Connect Seerr, Overseerr, or Jellyseerr in Settings → Integrations to manage requests here.',
             notConfigured: 'Request app not configured',
             notConfiguredHint: 'Set Request App Type, URL, and API key under Settings → Integrations. Ombi is not supported for in-portal approval yet.',
+            internalFetchHint: 'If you use a public reverse-proxy URL, the portal container may not reach it. Add an Internal Fetch URL under Settings → Integrations (docker service name or LAN IP, e.g. http://jellyseerr:5055).',
             notSupported: 'Request app type not supported',
             notSupportedHint: 'In-portal approval works with Seerr, Overseerr, and Jellyseerr. Ombi requires the external request UI.',
         },

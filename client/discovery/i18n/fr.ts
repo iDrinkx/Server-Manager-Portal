@@ -1911,7 +1911,7 @@ export const fr: DeepPartial<EnCatalog> = {
             pendingSummary: '{count} en attente - revue complète de type Seerr avec profils, dossiers, étiquettes et saisons',
             reviewQueue: 'File de validation', description: 'Approuvez ou refusez les demandes du portail, triez les signalements et gérez la liste de blocage.', issues: 'Signalements', blocklist: 'Liste de blocage',
             configuredConnectionFailed: 'L’application de demandes est configurée, mais la connexion a échoué (voir ci-dessous)', connectHint: 'Connectez Seerr, Overseerr ou Jellyseerr dans Réglages → Intégrations pour gérer les demandes ici.',
-            notConfigured: 'Application de demandes non configurée', notConfiguredHint: 'Configurez le type, l’URL et la clé API de l’application de demandes dans Réglages → Intégrations. Ombi ne permet pas encore la validation dans le portail.',
+            notConfigured: 'Application de demandes non configurée', notConfiguredHint: 'Configurez le type, l’URL et la clé API de l’application de demandes dans Réglages → Intégrations. Ombi ne permet pas encore la validation dans le portail.', internalFetchHint: 'Si vous utilisez une URL publique derrière un proxy inverse, le conteneur du portail risque de ne pas pouvoir l’atteindre. Ajoutez une URL de récupération interne dans Réglages → Intégrations (nom du service Docker ou IP LAN, par ex. http://jellyseerr:5055).',
             notSupported: 'Type d’application de demandes non pris en charge', notSupportedHint: 'La validation dans le portail fonctionne avec Seerr, Overseerr et Jellyseerr. Ombi nécessite son interface externe.',
         },
         filters: {
